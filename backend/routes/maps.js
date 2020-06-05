@@ -1,13 +1,21 @@
 var express = require("express");
 var router = express.Router();
 
-/* GET users listing. */
-router.post("/", function (req, res, next) {
-  // getting the coordinates from the front-end
+module.exports = ({ readMapFile }) => {
+  router.get("/", function (req, res, next) {
+    // getting the coordinates from the front-end => bodyParser
+    // checking if it is in the boundary of the Laval map
 
-  // checking if it is in the boundary of the Laval map
+    console.log("mapHelpers", readMapFile);
 
-  res.send("respond with a resource");
-});
+    readMapFile().then((bbox) => {
+      const [minLon, minLat, maxLon, maxLat] = bbox;
 
-module.exports = router;
+      // check the boundaries against the provided coordinates
+    });
+
+    res.send("getting bbox");
+  });
+
+  return router;
+};

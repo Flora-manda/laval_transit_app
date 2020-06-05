@@ -1,5 +1,10 @@
+let shapefile = require("shapefile");
+
 const readMapFile = function () {
-  // Reading the file from the assets folder
+  return shapefile
+    .read(process.cwd() + "/assets/laval.shp")
+    .then((data) => data.bbox)
+    .catch((err) => console.log(err));
 };
 
-module.exports = readMapFile;
+module.exports = { readMapFile };
