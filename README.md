@@ -20,6 +20,7 @@ The user can:
 
 - npm install both the backend and frontend folders
 - run both at the same time to access the application with npm start
+- backend API "http://localhost:3002/mapbbox"
 
 ## Contributors
 
