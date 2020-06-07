@@ -5,7 +5,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import MapboxDirections from "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions";
 import "@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css";
 
-mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
+mapboxgl.accessToken =
+  "pk.eyJ1IjoiZnV3YWRpZWd3dSIsImEiOiJja2IyZmhiYmYwOXJrMnNtdnVjcmVhemxrIn0.Wxndp_gEm8LECs4yr0smXA";
 
 class App extends React.Component {
   componentDidMount() {
