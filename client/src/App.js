@@ -17,7 +17,7 @@ class App extends React.Component {
       zoom: 12,
     });
     // fetch bbox values from backend and constrain mapbox direction inputs
-    const url = "http://localhost:3002/mapbbox";
+    const url = "http://localhost:3002/mapbox";
     const response = fetch(url)
       .then((res) => res.json())
       .then((bboxData) => {
