@@ -1,3 +1,7 @@
+## Link to live website
+
+https://laval-transit.herokuapp.com/
+
 ## Laval Transit App
 
 A navigation app that allows users find routes via different modes of transportation in the Laval area.
