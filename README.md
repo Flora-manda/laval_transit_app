@@ -20,8 +20,8 @@ The user can:
 ## Setup
 
 - npm install on main project folder
-- run both "node server.js" and "npm start" on two seperate terminal windows
-- reference: backend API "http://localhost:3002/mapbbox"
+- run "node server.js" to view app
+- reference: backend API to retrieve bbox data "http://localhost:3002/mapbbox"
 
 ## Contributors
 
