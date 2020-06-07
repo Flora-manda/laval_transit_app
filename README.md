@@ -15,12 +15,13 @@ The user can:
 - Node.JS
 - Express.JS
 - React
+- Mapbox
 
 ## Setup
 
-- npm install both the backend and frontend folders
-- run both at the same time to access the application with npm start
-- backend API "http://localhost:3002/mapbbox"
+- npm install on main project folder
+- run both "node server.js" and "npm start" on two seperate terminal windows
+- reference: backend API "http://localhost:3002/mapbbox"
 
 ## Contributors
 
