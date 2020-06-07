@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/mapbox", mapsRouter(mapHelpers));
+app.use(mapsRouter(mapHelpers));
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
