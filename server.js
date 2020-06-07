@@ -15,7 +15,7 @@ const server = http.createServer(app);
 
 // for dev deployment
 app.use(express.static(path.join(__dirname, "build")));
-app.get("/", (req, res) => {
+app.get("/3002", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 // view engine setup
@@ -51,7 +51,7 @@ app.use(function (err, req, res, next) {
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || "3002");
+const port = normalizePort("3002");
 app.set("port", port);
 
 /**
